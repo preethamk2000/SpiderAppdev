@@ -144,7 +144,8 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences("Saveinfo",Context.MODE_PRIVATE);
         int hscore;
         hscore = sp.getInt("score",0);
-
+        
+        //setting the highscore on the screen
         TextView tv3 = findViewById(R.id.textView3);
         tv3.setText("Highscore:");
         tv3.append(" "+hscore);
